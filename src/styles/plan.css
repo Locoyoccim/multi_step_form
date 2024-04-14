@@ -1,0 +1,128 @@
+@import url("/src/styles/colors.css");
+
+.container2 {
+  margin: -80px 15px 0 15px;
+  height: 450px;
+  padding: 25px 25px;
+  background-color: var(--White);
+  border-radius: 15px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  overflow-y: scroll;
+}
+.container2 h1 {
+  font-weight: 700;
+  font-size: 30px;
+  color: var(---Marine_blue);
+}
+.container2 p {
+  font-family: 500;
+  color: var(--Cool_gray);
+  font-size: 18px;
+  line-height: 25px;
+}
+.options_container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.options_container button {
+  background: none;
+  border: solid 1px var(--Cool_gray);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  gap: 15px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+.options_container button.active {
+  border: solid 1px var(--Purplish_blue);
+  background-color: hsl(228, 100%, 84%, 0.2);
+}
+.options_container button div {
+  text-align: left;
+  display: grid;
+  gap: 5px;
+}
+.options_container button h3 {
+  font-size: 18px;
+  color: var(---Marine_blue);
+}
+.options_container button:hover {
+  border: solid 1px var(--Purplish_blue);
+  transition: all 0.3s ease;
+}
+.year_promotion {
+  color: var(--Marine_blue);
+  font-weight: 500;
+  display: none;
+}
+.year_promotion.fade {
+  display: block;
+}
+.toggle_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 0;
+  border-radius: 10px;
+  background-color: hsl(228, 100%, 84%, 0.2);
+}
+.toggle_container button {
+  width: 45px;
+  height: 25px;
+  border-radius: 25px;
+  border: none;
+  background: var(--Marine_blue);
+  position: relative;
+  cursor: pointer;
+  z-index: 0;
+}
+.button_toggle {
+  background-color: var(--White);
+  width: 15px;
+  height: 15px;
+  z-index: 3;
+  position: absolute;
+  border-radius: 50%;
+  left: 5px;
+  top: 5px;
+  transition: 0.5s all ease;
+}
+.button_toggle.move {
+  left: 25px;
+}
+.toggle_container .month {
+  color: var(---Marine_blue);
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .container2 {
+    margin: 0 15px;
+    justify-content: space-between;
+    padding: 10px 25px;
+    overflow: initial;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container2 {
+    padding: 10px 40px;
+    width: 100%;
+  }
+  .options_container{
+    display: flex;
+    flex-direction: row;
+  }
+  .options_container button{
+    display: grid;
+    height: 220px;
+    width: 160px;
+  }
+}

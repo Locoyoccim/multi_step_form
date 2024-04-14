@@ -1,0 +1,25 @@
+@import url('/src/styles/colors.css');
+
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body{
+    height: 100vh;
+    background-color: var(--Magnolia);
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+}
+p, h3, h1{
+    margin: 0;
+    padding: 0;
+}
+@media screen and (min-width: 769px) {
+   
+}

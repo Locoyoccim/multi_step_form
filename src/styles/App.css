@@ -1,0 +1,25 @@
+@import url('/src/styles/colors.css');
+.main_container{
+    max-width: 768px;
+}
+@media screen and (min-width: 768px) {
+    .main_container{
+        display: flex;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 768px;
+        max-width: 900px;
+        height: 600px;
+        background-color: var(--White);
+        padding: 10px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .main_container{
+        width: 1000px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+}
